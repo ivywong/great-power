@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "great-power",
+    "version": "0.0.1",
+    "description": "with great power...",
+    "homepage_url": "https://github.com/ivywong/great-power",
+    "icons": {
+        "48": "icons/logo.svg",
+        "96": "icons/logo.svg"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["power.js"]
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{8ae89c2a-3ec9-4c70-8f27-c46963833eff}"
+        }
+    }
+}
